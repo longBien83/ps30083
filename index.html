@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.row1{
+      width: 100%;
+      text-align: center;
+      border: 100%;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-.5 * var(--bs-gutter-x));
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+  }
+  .row0{
+      display: block;
+      text-align: center;
+      background-color: red;
+      line-height: 50px;
+      float: left;
+      width: 100%;
+      color: black;
+  }
+  .search1{
+      display: flex;
+      align-items: center;
+      position: absolute; top: 15px;left: 20%;
+      background: none;
+      border: 1px solid rgb(170, 168, 168);
+      border-radius: 5px;
+      margin-top: 20px;
+  }
+  .tim{
+      border: 1px solid white;
+      border-radius: 5px;
+      color: blue;
+      cursor: pointer;
+  }
+  .tim:hover{
+      background-color: rgb(148, 148, 243);
+  }
+  #search-text{
+      border: none;
+      outline: none;
+      background: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      background:none;
+  }
+  #search-btn{
+  background:none;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  }
+  #header{
+          width: 100%;
+          display: block;
+          float: left;
+          clear: both;
+          font-size: 14px;
+          padding: 0px;
+          margin: 0;
+          background: #FFF;
+          background-size: cover;
+          transition: all 0.3s ease-out 0s;
+          -moz-transition: all 0.3s ease-out 0s;
+          -webkit-transition: all 0.3s ease-out 0s;
+      }
+      body.page-home {
+          --bs-white-rgb: #F2F2F2;
+      }
+      :before {
+          box-sizing: border-box;
+      }
+      body {
+          position: relative;
+          font: 400 14px/24px var( --freset);
+          color: RGB(0, 8, 28);
+          overflow-x: hidden;
+          width: 100%;
+          background-color: #fff;
+          transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+  }
+  .header__action__item > a {
+      position: relative;
+      padding-left: 46px;
+      min-height: 40px;
+      text-align: left;
+      color: inherit;
+      display: block;
+      text-decoration: none;
+  }
+  .wrap{
+      border: 3px;
+      height: 50%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .wrap img{
+      box-sizing: content-box;
+      cursor: pointer;
+      display: inline;
+      margin-left: 100px;
+      margin-top: 10px;
+  }
+  .wrap>.q{
+      background: url( 'img/icon-header-store.png');
+      background-size: auto 30px;
+  }
+  .searchButton {
+      width: 50px;
+      border: 2px solid red;
+      background-color: red;
+      text-align: center;
+      color: white;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      font-size: 100px;;
+  }
+  .row2{
+      border: 100px;
+      margin-bottom: 30px;
+  }
+  .row3{
+      border: 10px;
+      text-align: center;
+  }
+  .row4{
+      border: 10px;
+      text-align: center;
+  }
+  .row5{
+      text-align: center;
+  }
+  .row5>.box1{
+      background-color: pink;
+  }
+  .row5>.box2{
+      background-color: pink;
+      color: salmon;
+      margin-left: 2px;
+      margin-right: 2px;
+  }
+  .row6{
+      border: 10px;
+      width: 100%;
+      text-align: center;
+  
+  }
+  .row7{
+      text-align: center;
+      width: 100%;
+  }
+  .iteam{
+      margin: 2 10px 15px 6;
+      width: 285px;
+      background: white;
+      box-shadow: 0 4px 6px #00000029;
+      border-radius: 100px;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: center;
+    }
+      .info{
+          min-height: 70px;
+      }
+    .iteam>img{
+      width: 280px;
+      margin: 30px auto 10 auto;
+          text-align: center;
+    }
+      .span{
+      padding-top: 10px;
+      font-size: 20px;
+      color: red;
+      font-weight: 700;
+          float: right 0;
+    }
+    .gia{
+      float: center;
+    }
+    .giamgia {
+    background: url("https://theme.hstatic.net/1000026716/1000440777/14/icon-saleoff.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: #180733;
+    font-size: 20px;
+    padding-top: 19px;
+    }
+      .sao{
+          margin: 0 !important;
+      font-size: 13px;
+      line-height: 1;
+      }
+     
+      .row11{
+          text-align: center;
+          border: 0px auto;
+  
+      }
+      .row11>.box3{
+      margin: 2 10px 15px 6;
+      width: 120px;
+      background: white;
+      box-shadow: 0 4px 6px #00000029;
+      border-radius: 100px;
+      display: block;
+      position: relative;
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2px;
+      }
+      .row11>.img{
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+      
+      .row16{
+          text-align: center;
+          margin-bottom: 50px;
+      }
+      .container1{
+          border: none;
+          margin: 0;
+          height: 700px;
+          background-color: white;
+      }
+      .section1{
+          float: left;
+          border: none;
+          height: 600px;
+          width: 200px;
+          margin-left: 70px;
+          margin-top: 10px;
+      
+      }
+      .nho1{
+          margin-top: 5px;
+          margin-left: 5px;
+      }
+      .vanban1{
+          font-size:15px ;
+      }
+      .nho1>img{
+          margin-top: 15px;
+      }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css ">
+</head>
+<body>
+  <div row1>
+  </div>
+  <div class="container hlogo__container" id="hlogo__container">
+    <img src="https://minhtuanmobile.com/uploads/slide/minh-tuan-mobile-dai-ly-uy-quyen-chinh-thuc-cua-appletai-viet-nam-220928113704.jpg" width="100%">
+      <div class="search1">
+        <form action="" class="search-box">
+            <button id="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" id="search-text">
+        </form>
+        <p>|</p>
+        <div class="tim">
+        <p> Tìm Kiếm</p>
+        </div>
+    </div>
+  
+              <div class="col-auto header__action__container">
+<ul class="row header__action">
+    <li class="col-auto header__action__item header__action__item--hotline">
+      <a href="tel:19003355" class="header__action__icon_hotline">
+          <span>Hotline<b class="fs15">19003355</b></span> </a>
+    </li>
+    <li class="col-auto header__action__item ps-4 px-4">
+        <a href="https://minhtuanmobile.com/cart/" class="header__action__icon_order">
+            <b>Giỏ hàng</b><span class="cartitems_total">của bạn</span>        </a>
+    </li>
+
+    <li class="col-auto header__action__item  ">
+      <a href="https://minhtuanmobile.com/kiem-tra-don-hang/" class="header__action__icon_checkorder">
+          Kiểm tra <b>đơn hàng</b>      </a>
+    </li>
+
+    <li class="col-auto header__action__item ">
+      <a href="" class="header__action__icon_store">
+        Hệ Thống <b>Cửa hàng</b></a>
+    </li> 
+</ul>
+</div>
+            </div>
+<div class="row0">
+  <i class="fas fa-tablet-alt"></i><a href="">Iphone</a>
+  <i class="fas fa-tablet-alt"></i><a href="">Ipad</a>
+  <i class="fas fa-tablet-alt"></i><a href="">Watch</a>
+  <i class="fab fa-apple"></i><a href="#">Mac</a>
+  <i class="fas fa-laptop"></i><a href="#">Laptop</a>
+  <i class="fas fa-headphones"></i><a href="#">Samsung</a>
+  <i class="fas fa-undo-alt"></i><a href="#">Airpods</a>
+  <i class="fas fa-utensils"></i><a href="#">Âm thanh</a>
+  <i class="fas fa-sim-card"></i><a href="#">Phụ kiện</a>
+  <i class="fas fa-percentage"></i> <a href="#">Máy cũ</a>
+</div>
+    <div class="row2">
+        <img src="https://minhtuanmobile.com/uploads/slide/thang-chung-doi-yeu-thuong-khap-loi-230216025341.jpg" width="100%">
+    </div>
+<div class="row3">
+    <img src="https://minhtuanmobile.com/uploads/slide/sieu-pham-apple-watch-2022-230216110208.png" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/airpods-230216110215.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/macbook-230216110223.jpg" alt="">
+</div>
+<div class="row4">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120453-148-ct-quang-vinh-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120453-147-ct-pham-xuan-manh-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120453-146-ct-junior-marini-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120453-137-ct-hoang-lam-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120452-136-ct-walisson-maia-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120452-135-ct-moses-oloya-14_thumb.jpg" alt="">
+    <img src="https://minhtuanmobile.com/uploads/slide/230216120452-134-ct-van-hoang-14_thumb.jpg" alt="">
+</div>
+<div class="row5">
+    <img src="https://minhtuanmobile.com/uploads/slide/thang-chung-doi-yeu-thuong-khap-loi-230203104031_copy.jpg" width="100%">
+    <div class="box1">
+        <h2>Từ 1 - 28.02.2023</h2>
+        <p>Kết thúc sau : 00 : 00 : 00 : 00</p>
+    </div>
+    <div class="iteam">
+        <img src="https://minhtuanmobile.com/uploads/products/220908114324-iphone-14-pro-minh-tuan-mobile3-220908234324_thumb.jpg" alt="">
+        
+        <div class="info"> <a href="#">Iphone 14 Pro Max 128Gb</a>
+          <div class="gia">
+            <span>27,690,000₫</span>
+            <s>34,990,000₫</s>
+            <br>
+          Hoặc trả trước <span>8,500,000đ</span>
+          </div>
+          <div class="giamgia">-20%</div>
+        </div>
+      </div>
+      <div class="iteam">
+        <img src="https://minhtuanmobile.com/uploads/products/z4024574710453-01c39ed52dcd3a7f8ef33652bb12e0af-230109110603-230109110603_thumb.jpg" alt="">
+        
+        <div class="info"> <a href="#">Iphone 14 Pro Max 128GB</a>
+          <div class="gia">
+            <span>27,490,000₫</span>
+            <s>34,990,000 ₫</s>
+            <br>
+          Hoặc trả trước <span>8,400,000đ</span>
+          </div>
+          <div class="giamgia">-21%</div>
+        </div>
+      </div>
+      <div class="iteam">
+        <img src="https://minhtuanmobile.com/uploads/products/z4024574722204-0b2d64e695f48688350de9f4ea92cd39-230109110736-230109110736_thumb.jpg" alt="">
+        
+        <div class="info"> <a href="#">Iphone 14 Pro Max 512GB</a>
+          <div class="gia">
+            <span>35,890,000₫</span>
+            <s>43,990,000₫</s>
+            <br>
+          Hoặc trả trước <span>11,000,000đ</span>
+          </div>
+          <div class="giamgia">-18%</div>
+        </div>
+      </div>
+      <div class="iteam">
+        <img src="https://minhtuanmobile.com/uploads/products/220908113233-iphone-14-pro-minh-tuan-mobile2-220908233233_thumb.jpg" alt="">
+        
+        <div class="info"> <a href="#">Iphone 14 Pro 128GB</a>
+          <div class="gia">
+            <span>24,890,000₫</span>
+            <s>30,990,000₫</s>
+            <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+          </div>
+          <div class="giamgia">-19%</div>
+        </div>
+      </div>
+      <div class="iteam">
+        <img src="https://minhtuanmobile.com/uploads/products/211-220825081130-220825081130_thumb.jpg" width="100%">
+        
+        <div class="info"> <a href="#">Iphone 11 64GB</a>
+          <div class="gia">
+            <span>10,690,000₫</span>
+            <s>15,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>1,100,000đ</span>
+          </div>
+          <div class="giamgia">-34%</div>
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="iteam">
+      <img src="https://minhtuanmobile.com/uploads/products/z4015264626725-adedc0e08392723b04cad3e095344bb7-230109110332-230109110332_thumb.jpg" alt="">
+      
+      <div class="info"> <a href="#">Iphone 14 Pro 128Gb</a>
+        <div class="gia">
+          <span>24,890,000₫</span>
+          <s>30,990,000₫</s>
+          <br>
+        Hoặc trả trước <span>7,700,000đ</span>
+        </div>
+        <div class="giamgia">-19%</div>
+      </div>
+    </div>
+    <div class="iteam">
+      <img src="https://minhtuanmobile.com/uploads/products/220908112441-iphone-14-pro-minh-tuan-mobile3-220908232441_thumb.jpg" alt="">
+      
+      <div class="info"> <a href="#">Iphone 14 Pro Max 256GB</a>
+        <div class="gia">
+          <span>30,190,000₫</span>
+          <s>37,990,000 ₫</s>
+          <br>
+        Hoặc trả trước <span>9,300,000đ</span>
+        </div>
+        <div class="giamgia">-20%</div>
+      </div>
+    </div>
+    <div class="iteam">
+      <img src="https://minhtuanmobile.com/uploads/products/z4015255570909-3006a62b5b9f1fe3125070767fe23fdb-230109110456-230109110456_thumb.jpg" alt="">
+      
+      <div class="info"> <a href="#">Iphone 14 Pro Max 1TB</a>
+        <div class="gia">
+          <span>49,990,000₫</span>
+          <s>41,990,000₫</s>
+          <br>
+        Hoặc trả trước <span>12,600,000đ</span>
+        </div>
+        <div class="giamgia">-17%</div>
+      </div>
+    </div>
+    <div class="iteam">
+      <img src="https://minhtuanmobile.com/uploads/products/220908113233-iphone-14-pro-minh-tuan-mobile2-220908233233_thumb.jpg" alt="">
+      
+      <div class="info"> <a href="#">Iphone 14 Pro 1TB</a>
+        <div class="gia">
+          <span>41,390,000₫</span>
+          <s>39,990,000₫</s>
+          <br>
+        Hoặc trả trước <span>8,500,000đ</span>
+        </div>
+        <div class="giamgia">-19%</div>
+      </div>
+    </div>
+    <div class="iteam">
+      <img src="https://minhtuanmobile.com/uploads/products/13-hong-221119041920-221119161921_thumb.png" alt="">
+      
+      <div class="info"> <a href="#">Iphone 14 Pro Max 128GB</a>
+        <div class="gia">
+          <span>33,690,000₫</span>
+          <s>27,990,000₫</s>
+        <br>
+        Hoặc trả trước <span>8,400,000đ</span>
+        </div>
+        <div class="giamgia">-34%</div>
+      </div>
+    </div>
+  </div>  
+<div class="row6">
+    <img src="https://minhtuanmobile.com/uploads/slide/iphone-14-series-230216110325.jpg" width="100%">
+      </div>
+<div class="row7">
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/ban-may-98-221119022017-221119142017_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 128Gb</a>
+      <div>
+        <b>19,990,000₫</b>
+        <s>24,490,000₫</s>
+          <br>
+        Hoặc trả trước <span>6,000,000đ</span>
+      </div>
+      <div class="giamgia">-12%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/ban-may-98-221119022017-221119142017_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 256GB</a>
+      <div>
+        <span>22,990,000₫</span>
+        <s>25,990,000đ</s>
+          <br>
+          Hoặc trả trước <span>6,900,000đ</span>
+      </div>
+      <div class="giamgia">-12%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-plus-trang-221119023224-221119143224_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 128GB</a>
+      <div class="gia">
+        <span>22,890,000₫</span>
+            <s>27,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>6,900,000đ</span>
+      </div>
+      <div class="giamgia">-19%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-plus-den-221119023209-221119143209_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro 256GB</a>
+      <div class="gia">
+        <span>25,490,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-18%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-pro-tim-221119023329-221119143329_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 128GB</a>
+      <div class="gia">
+        <span>24,890,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-18%</div>
+    </div>
+    </div>
+<br>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/220908112441-iphone-14-pro-minh-tuan-mobile3-220908232441_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro 128Gb</a>
+      <div>
+        <b>24,890,000₫</b>
+        <s>30,990,000₫</s>
+          <br>
+        Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-19%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/ban-may-98-221119022017-221119142017_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro 256GB</a>
+      <div>
+        <span>27,990,000₫</span>
+        <s>33,690,000đ</s>
+          <br>
+          Hoặc trả trước <span>8,500,000đ</span>
+      </div>
+      <div><div class="giamgia">-18%</div></div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-plus-trang-221119023224-221119143224_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro 512GB</a>
+      <div class="gia">
+        <span>32,990,000₫</span>
+            <s>38,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>10,100,000đ</span>
+      </div>
+      <div class="giamgia">-15%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-plus-den-221119023209-221119143209_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro 256GB</a>
+      <div class="gia">
+        <span>25,490,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-21%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/14-pro-tim-221119023329-221119143329_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">Iphone 14 Pro Max 128GB</a>
+      <div class="gia">
+        <span>27,490,000₫</span>
+            <s>34,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>8,400,000đ</span>
+      </div>
+      <div class="giamgia">-18%</div>
+      </div>
+      </div>
+    </div>
+<div class="row8">
+    <img src="https://minhtuanmobile.com/uploads/slide/mac-230216110356.jpg" width="100%">
+  </div>
+<div class="row9">
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/m1-220823065356-220823185356_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div>
+        <b>19,990,000₫</b>
+        <s>24,490,000₫</s>
+          <br>
+        Hoặc trả trước <span>6,000,000đ</span>
+      </div>
+      <div class="giamgia">-31%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/macbook-air-m2-2022-minhtuanmobile13-220607113559-220607233559_thumb.jpeg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div>
+        <span>22,990,000₫</span>
+        <s>25,990,000đ</s>
+          <br>
+          Hoặc trả trước <span>6,900,000đ</span>
+      </div>
+      <div class="giamgia">-14%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/macbook-air-m2-2022-minhtuanmobile14-220709095808-220709215809_thumb.jpeg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2022 256GB </a>
+      <div class="gia">
+        <span>22,890,000₫</span>
+            <s>27,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>6,900,000đ</span>
+      </div>
+      <div class="giamgia">-13%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/macbook-air-m2-2022-minhtuanmobile15-220709094226-220709214226_thumb.jpeg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" LATE 2022 256GB </a>
+      <div class="gia">
+        <span>25,490,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-10%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/photo-2022-10-23-10-00-46-221023100111-221023100111_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div class="gia">
+        <span>24,890,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-17%</div>
+    </div>
+    </div>
+<br>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/thumb-macbook-pro-m2-2022-minhtuanmobile10-220608111452-220608231452_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div>
+        <b>24,890,000₫</b>
+        <s>30,990,000₫</s>
+          <br>
+        Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-16%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/thumb-macbook-pro-m2-2022-minhtuanmobile12-220608110454-220608230454_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div>
+        <span>33,990,000₫</span>
+        <s>27,690,000đ</s>
+          <br>
+          Hoặc trả trước <span>8,500,000đ</span>
+      </div>
+      <div><div class="giamgia">-17%</div></div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/ban-may-98-9-221122042008-221122162008_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div class="gia">
+        <span>38,990,000₫</span>
+            <s>32,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>10,100,000đ</span>
+      </div>
+      <div class="giamgia">-21%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/ban-may-98-8-221122041753-221122161753_thumb.png" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div class="gia">
+        <span>25,490,000₫</span>
+            <s>30,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>7,700,000đ</span>
+      </div>
+      <div class="giamgia">-12%</div>
+    </div>
+  </div>
+  <div class="iteam">
+    <img src="https://minhtuanmobile.com/uploads/products/new-apple-tv-4k-mp7p2za-minhtuanmobile-220121102138-220811034027-220811154027_thumb.jpg" alt="">
+    
+    <div class="info"> <a href="#">MacBook Air 13" M1 LATE 2020 256GB </a>
+      <div class="gia">
+        <span>27,490,000₫</span>
+            <s>34,990,000₫</s>
+          <br>
+          Hoặc trả trước <span>8,400,000đ</span>
+      </div>
+      <div class="giamgia">-18%</div>
+      </div>
+      </div>
+    </div>
+  <div class="row10">
+    <h2>Xem toàn bộ sản phẩm</h2>
+  </div>
+  <div class="row11 row">
+    <h3>Danh mục phụ kiện</h3>
+    <div class="box3"> 
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-6-220709191651.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Phụ kiện Macbook</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-1-220709191310.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Phụ kiện Apple</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/phu-kien-samsung-230202152653.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Phụ kiện Samsung</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-2-220709191412.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Cốc cáp</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-3-220709191442.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Sạc dự phòng</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-4-220709191603.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>bao da - Ốp lưng</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-5-220709191636.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Dán màn hình</figcaption>
+    </div>
+
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-7-220709191719.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Bàn phím chuột</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-8-220709191736.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Balo túi chống shock</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-9-220709191856.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Phụ kiện Chụp ảnh</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-10-220709191927.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Camera</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-11-220709191948.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Ổ cứng</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-13-220709192017.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Dây đeo airtag</figcaption>
+    </div>
+    <div class="box3">
+      <img src=" https://minhtuanmobile.com/uploads/slide/artboard-18-220727104331.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Apple Care Plus</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/phu-kien-tien-ich-220729174512.jpg" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Phụ kiện Tiện ích</figcaption>
+    </div>
+    <div class="box3">
+      <img src="https://minhtuanmobile.com/uploads/slide/artboard-14-220709193345.png" alt="Phụ kiện MacBook" class="img" loading="lazy" width="114" height="114">
+      <figcaption>Sim số</figcaption>
+    </div>
+  </div>
+  <div class="row row15">
+
+  </div>
+  <br>
+  <footer>
+    <div class="container1">
+        <div class="section1">
+            <div class="nho1">
+                <span><strong>Liên hệ và mua hàng</strong></span>
+                    <br>
+                        <div class="vanban1">
+                            <p>Chăm sóc khách hàng <strong style="color: blue;">cskh@minhtuanmobile.com</strong></p>
+                            <p>Báo giá sản phẩm <strong style="color: blue;">baogia@minhtuanmobile.com</strong></p>
+                            <br>
+                        </div>
+            </div>
+        </div>
+        <div class="section1">
+          <div class="nho1">
+              <span><strong>Liên hệ và mua hàng</strong></span>
+                  <br>
+                      <div class="vanban1">
+                          <span><strong> Chính sách bán hàng</strong></span>
+                          <p>Hình thức thanh toán</p>
+                          <p>Chính sách vận chuyển</p>
+                          <p>Chuyển sách đổi, trả hàng</p>
+                          <p>Chính sách bảo mật thông tin</p>
+                          <p>Chính sách và quy định chung</p>
+                          <p>Chính sách bảo hành</p> 
+                      </div>
+          </div>
+      </div>
+        <div class="section1">
+            <div class="nho1">
+                <span><strong>Hỗ trợ khách hàng </strong></span>
+                    <div class="vanban1">
+                        <p>Thương hiệu phân phối</p>
+                        <p>Kèo thơm</p>
+                        <p>Tuyển dụng</p>
+                        <p>Trả góp</p>
+                        <p>Thu cũ đổi mới</p>
+                        <p>Tin tức</p>
+                    </div>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="nho1">
+                <span><strong>Hợp tác và liên kết</strong></span>
+                     <div class="vanban1">
+                        <p>Quy chế hoạt động sàn GDTMDT</p>
+                        <p>Bán hàng cùng minhtuanmobile</p>
+                     </div>
+                <span><strong>Chứng nhận bởi</strong></span>  
+                     <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong-2.png" width="30px" alt="">
+                     <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong.svg" width="75px" alt="">
+            </div>
+        </div>    
+    </div>
+</footer>
+<div class="row16">
+  <p><strong> Công ty TNHH Minh Tuấn Mobile - GPĐKKD: 0316579658 do sở KH & ĐT TP. HCM cấp ngày 09/11/2020.</strong></p>
+  <p><strong>Địa chỉ: 135/1/8 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam.</strong></p>
+  <p>Điện thoại <strong style="color: red;">1900 3355</strong></p>
+</div>
+<div> 
+  <script src="https://uhchat.net/code.php?f=3b8914"></script>
+</div>
+</div>
+</body>
+</html>
